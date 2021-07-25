@@ -1,0 +1,42 @@
+@media (min-resolution: 192dpi),
+(min-resolution: 2ddpx) {
+    .header-img {
+        background-image: url('../assets/img/decor-img/header-picture@2x.jpg');
+    }
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .site-logo {
+        margin-bottom: 30px;
+    }
+
+    .nav-menu {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .nav-menu-list-item {
+        margin-right: 13%;
+        list-style: none;
+
+    }
+
+    .nav-menu-button-container {
+        display: flex;
+
+    }
+
+    .main-title {
+        margin-bottom: 110px;
+        font-size: 100px;
+        line-height: 110px;
+    }
+}
