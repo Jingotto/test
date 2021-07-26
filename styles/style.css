@@ -7,6 +7,11 @@
 
 /* ALL_SECTION */
 
+:root {
+    --head-text-item-color: #ffffff;
+    --head-hover-color: #fce38a;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -90,7 +95,7 @@ img {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 30px;
-    color: #ffffff;
+    color: var(--head-text-item-color);
 }
 
 .nav-menu {
@@ -123,11 +128,11 @@ img {
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--head-text-item-color);
 }
 
 .list-item-link:hover {
-    color: #fce38a;
+    color: var(--head-hover-color);
 }
 
 .list-item-link:hover::after {
@@ -137,7 +142,7 @@ img {
     content: "";
     width: 100%;
     height: 3px;
-    background-color: #fce38a;
+    background-color: var(--head-hover-color);
 }
 
 .nav-menu-button-shop {
@@ -152,11 +157,16 @@ img {
     height: 18px;
 }
 
+.nav-menu-button-glass:hover {
+    fill: var(--head-text-item-color);
+}
+
+
 /* MAIN_TITLE_SECTION */
 
 .main-titel-section {
     text-align: center;
-    color: #ffffff;
+    color: var(--head-text-item-color);
 }
 
 .main-titel-subtitle {
@@ -177,7 +187,15 @@ img {
 .main-titel-button {
     width: 160px;
     height: 40px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--head-text-item-color);
+    color: var(--head-text-item-color);
+    transition: 0.7s linear;
+}
+
+.main-titel-button:hover {
+    transform: scale(1.2);
+    color: var(--head-text-item-color);
+    border: 3px solid var(--head-text-item-color);
 }
 
 /* AMAZING_SERVICE_SECTION */
@@ -215,27 +233,27 @@ img {
     background-position: center;
 }
 
-.clock::before {
+.item_clock::before {
     background-image: url('../assets/img/decor-img/ALARM.png');
 }
 
-.line-graph::before {
+.item_line-graph::before {
     background-image: url('../assets/img/decor-img/LINE-GRAPH.png');
 }
 
-.computer::before {
+.item_computer::before {
     background-image: url('../assets/img/decor-img/COMPUTER.png');
 }
 
-.book::before {
+.item_book::before {
     background-image: url('../assets/img/decor-img/BOOK.png');
 }
 
-.home::before {
+.item_home::before {
     background-image: url('../assets/img/decor-img/HOME.png');
 }
 
-.image::before {
+.item_image::before {
     background-image: url('../assets/img/decor-img/IMAGE.png');
 }
 
