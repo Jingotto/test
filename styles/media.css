@@ -5,12 +5,24 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width:768px) {
+    .list-item-title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 453px) {
+    .amazing-services-list-item {
+        padding-left: 68px;
+    }
+    
+}
+
+@media (max-width: 900px) {
     .header-section {
-        display: flex;
         flex-direction: column;
         margin: 0 auto;
-        max-width: 500px;
+        padding: 5%;
     }
 
     .site-logo {
@@ -18,19 +30,59 @@
     }
 
     .nav-menu {
-        display: flex;
         width: 100%;
         margin-bottom: 30px;
     }
 
-    .nav-menu-button-container {
-        display: flex;
-
-    }
-
     .main-title {
         margin-bottom: 110px;
-        font-size: 100px;
-        line-height: 110px;
+        font-size: 75px;
+        line-height: 1;
+    }
+
+    .amazing-services-list-item {
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .footer-section-license {
+        margin-bottom: 10px;
+    }
+
+    .footer-form {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .team-section-list-item {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 452px) {
+    .main-title {
+        margin-bottom: 110px;
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .amazing-services-list-item {
+        text-align: center;
+    }
+
+    .amazing-services-list-item::before {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .team-section-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
