@@ -145,20 +145,13 @@ img {
     background-color: var(--head-hover-color);
 }
 
-.nav-menu-button-shop {
-    background-image: url('../assets/img/decor-img/header-icon/shopping-icon.svg');
-    width: 18px;
-    height: 15px;
+.nav-menu-button-icon {
+    fill: #ffffff;
+    position: relative;
 }
 
-.nav-menu-button-glass {
-    background-image: url('../assets/img/decor-img/header-icon/glass-icon.svg');
-    width: 18px;
-    height: 18px;
-}
-
-.nav-menu-button-glass:hover {
-    fill: var(--head-text-item-color);
+.nav-menu-button-icon:hover {
+    fill: var(--head-hover-color);
 }
 
 
@@ -265,6 +258,7 @@ img {
     font-family: 'Montserrat';
     font-weight: normal;
     font-size: 14px;
+    line-height: 0.8;
     color: #333333;
     text-transform: uppercase;
 }
